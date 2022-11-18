@@ -11,3 +11,13 @@ test:
   stage: test
   script:
     - mvn test
+
+package:
+  stage: package
+  script:
+    - mvn package
+
+deploy:
+  stage: deploy
+  script:
+    - scripts/deploy.sh

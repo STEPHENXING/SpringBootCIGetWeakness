@@ -39,6 +39,17 @@
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
+				<executions>
+					<execution>
+						<configuration>
+							<mainClass>com.yy.springboot_find_weakness.SpringbootFindWeaknessApplication</mainClass>
+						</configuration>
+					</execution>
+				</executions>
+
+				<configuration>
+					<executable>true</executable>
+				</configuration>
 			</plugin>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>

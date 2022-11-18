@@ -1,0 +1,1 @@
+echo deploy_inside_gitci
