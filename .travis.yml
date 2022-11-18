@@ -4,6 +4,9 @@
 # This enables the 'defaults' to test java applications:
 language: java
 
+services:
+ - docker
+
 # We can specify a list of JDKs to be used for testing
 # A list of available JDKs in Trusty can be seed in:
 # https://docs.travis-ci.com/user/reference/trusty/#jvm-clojure-groovy-java-scala-images
@@ -15,4 +18,9 @@ jdk:
 # The 'language: java' directive sets up sane defaults to test common java applications
 # We use the defaults for installing dependencies, compiling and testing maven applications
 # In our case it will be 'mvn install' followed by 'mvn test'
-script: mvn package
+script:
+ - mvn package
+ - docker build -t xingxiliang/spring_find_weak_server:0.2    .
+ - docker push xingxiliang/spring_find_weak_server:0.2
+
+
