@@ -26,7 +26,7 @@ public class HelloController {
 
         // String result = String.format("in entry module_1 is %s, module_1 is %s", demo.module_1, demo.mark_1);
         System.out.println(result);
-        return  String.format("{\"weak\":\"%s\", \"weak_mark\":\"%f\"}", retValue[0], retValue[1]);
+        return  String.format("{\"weak\":\"%s_houzhui\", \"weak_mark\":\"%f\"}", retValue[0], retValue[1]);
     }
 
 
