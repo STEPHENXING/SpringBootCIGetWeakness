@@ -20,7 +20,8 @@ jdk:
 # In our case it will be 'mvn install' followed by 'mvn test'
 script:
  - mvn package
- - docker build -t xingxiliang/spring_find_weak_server:0.2    .
- - docker push xingxiliang/spring_find_weak_server:0.2
+ - docker build -t "$DOCKER_USERNAME"/spring_find_weak_server:0.2    .
+ - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin
+ - docker push "$DOCKER_USERNAME"/spring_find_weak_server:0.2
 
 
