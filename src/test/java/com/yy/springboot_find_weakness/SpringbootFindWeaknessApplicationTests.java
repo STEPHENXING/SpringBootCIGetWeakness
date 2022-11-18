@@ -27,7 +27,7 @@ class SpringbootFindWeaknessApplicationTests {
 		m.put("mark_2", 30);
 		m.put("mark_3", 40);
 
-		Object[] exp = {"a", 23.0f};
+		Object[] exp = {"a", 20.0f};
 		assertArrayEquals(exp, c.getWeakestModule(m));
 
 	}
