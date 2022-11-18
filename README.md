@@ -19,6 +19,7 @@ if gitlab-ci is working.....
 12. change gitlib-ci.yml to integrate docker build & docker push
 
 if travis.yml is working.....
+actaully, it is travis.yml is working, please refer to it.
 
 Java CI Demo
 
